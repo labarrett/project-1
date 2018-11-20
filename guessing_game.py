@@ -19,7 +19,7 @@ def start_game():
                 print("It's higher")
                 attempt+=1
             elif choice > 10:            
-                print("Your number is to high")
+                print("Your number is too high")
                 attempt+=1
             elif random_number < choice:            
                 print("It's lower")
