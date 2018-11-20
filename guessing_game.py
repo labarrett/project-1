@@ -6,7 +6,6 @@ print("***********  Welcome to the guessing game! *********** " )
 
 random_number= random.randint(1, 10) 
 
-
 #function of guesing game
 
 def start_game():  
