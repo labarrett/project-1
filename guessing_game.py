@@ -4,7 +4,6 @@ print("Welcome to the guessing game! ")
 
 random_number= random.randint(1, 10) 
 
-
 def start_game():  
 
     attempt=0
@@ -21,7 +20,6 @@ def start_game():
             attempt+=1
             print("You got it! That took",attempt, "attempts. Game Over.")
             break
-
                      
 start_game()
 
