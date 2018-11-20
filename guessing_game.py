@@ -12,22 +12,27 @@ def start_game():
 
     attempt=0
 
-    while True:
+   while True:
         try:
             choice=int(input("Guess a number between 1 through 10. "))        
             if random_number > choice:
-                print("It's higher")
+                print("it's higher")
                 attempt+=1
             elif choice > 10:            
-                print("Your number is too high")
+                print("Your number is to high")
                 attempt+=1
             elif random_number < choice:            
-                print("It's lower")
+                print("it's lower")
                 attempt+=1                     
             else:
                 attempt+=1
-                print("You got it! That took", attempt, "attempts. Game Over.")
-                break
+                print("You got it! That took",attempt, "attempts.")
+                answer=input("Would you look to keep playing? Pick Y/N ")
+                if answer.lower()=="y":
+                    continue
+                else:
+                    print("Thank you for playing!")
+                    break
         except ValueError as error:
             print("ERROR. Please insert a numerical number instead")
 
